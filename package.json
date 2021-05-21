@@ -1,0 +1,23 @@
+{
+  "name": "app-name",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "copyfiles -u 1 src/**/**/* src/**/* src/* public",
+    "build": "npm run copy && workbox injectManifest workbox-config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.3",
+    "express": "^4.17.1",
+    "utf-8-validate": "^5.0.5",
+    "workbox-background-sync": "^6.1.5"
+  },
+  "description": "",
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "workbox-cli": "^6.1.5"
+  }
+}
